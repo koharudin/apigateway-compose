@@ -1,0 +1,15 @@
+[submodule "apigateway-kong"]
+	path = apigateway-kong
+	url = https://github.com/koharudin/apigateway-kong.git
+[submodule "apigateway-laravel"]
+	path = apigateway-laravel
+	url = https://github.com/koharudin/apigateway-laravel.git
+[submodule "apigateway-traefik"]
+	path = apigateway-traefik
+	url = https://github.com/koharudin/apigateway-traefik.git
+[submodule "apigateway-tyk"]
+	path = apigateway-tyk
+	url = https://github.com/koharudin/apigateway-tyk.git
+[submodule "apigateway-gravitee"]
+	path = apigateway-gravitee
+	url = https://github.com/koharudin/apigateway-gravitee.git

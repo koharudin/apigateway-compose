@@ -1,0 +1,12 @@
+services:
+  backend:
+    tty: true
+    build:
+      context: backend
+      dockerfile: local.Dockerfile
+    ports:
+      - 2009:80
+    command: bash -c "chown www-data:www-data -R /var/www/storage && composer update && apache2-foreground"
+    volumes:
+    - ./backend/app:/var/www
+    - ./backend/app/public:/var/www/html    
