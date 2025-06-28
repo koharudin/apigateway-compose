@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -7,5 +8,7 @@ Route::get('/', function () {
 });
 
 Route::get('/endpoint1', function () {
-    return response()->json(["message"=>"Endpoint 1 ".date("Y-m-d H:i:s")]);
+    Log::info("cek123");
+    Log::error("Andin cantik");
+    return response()->json(["message"=>"Endpoint 1 ".date("Y-m-d H:i:s")." ".request()->input("param1")]);
 });

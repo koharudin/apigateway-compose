@@ -126,6 +126,11 @@ return [
         'emergency' => [
             'path' => storage_path('logs/laravel.log'),
         ],
+        'loki' => [
+            'driver' => 'monolog',
+            'handler' => App\Logging\LokiHandler::class,
+            'level' => 'debug', // level log yang diinginkan
+        ],
 
     ],
 
